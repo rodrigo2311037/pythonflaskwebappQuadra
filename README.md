@@ -50,7 +50,7 @@ Quadra/
 Clonar el repositorio:
 
 ```
-git clone https://github.com/usuario/Quadra.git
+git clone https://github.com/usuario/Quadra.git](https://github.com/rodrigo2311037/pythonflaskwebappQuadra.git
 cd Quadra
 ```
 Crear entorno virtual (opcional pero recomendado):
