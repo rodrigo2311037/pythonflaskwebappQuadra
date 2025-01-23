@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Puestos de Comida{% endblock %}
+{% block content %}
+<h1>Puestos de Comida</h1>
+<ul class="list-group">
+  {% for stall in food_stalls %}
+  <li class="list-group-item">
+    <h4>{{ stall.name }}</h4>
+    <p>{{ stall.location }}</p>
+    <p>{{ stall.description }}</p>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

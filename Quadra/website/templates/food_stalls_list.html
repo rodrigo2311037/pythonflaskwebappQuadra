@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Puestos de Comida{% endblock %}
+
+{% block content %}
+<h3>Puestos de Comida</h3>
+<ul class="list-group">
+  {% for stall in food_stalls %}
+  <li class="list-group-item">
+    <a href="{{ url_for('food_stalls.view_food_stall', id=stall.id) }}">
+      {{ stall.name }} - {{ stall.description }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

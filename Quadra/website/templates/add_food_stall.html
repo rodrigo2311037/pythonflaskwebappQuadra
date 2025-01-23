@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Añadir Puesto de Comida{% endblock %}
+
+{% block content %}
+<form method="POST">
+  <h3>Añadir un Puesto de Comida</h3>
+  <div class="form-group">
+    <label for="name">Nombre del Puesto</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre del puesto"/>
+  </div>
+  <div class="form-group">
+    <label for="description">Descripción</label>
+    <textarea class="form-control" id="description" name="description" placeholder="Descripción"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="latitude">Latitud</label>
+    <input type="text" class="form-control" id="latitude" name="latitude" placeholder="Latitud"/>
+  </div>
+  <div class="form-group">
+    <label for="longitude">Longitud</label>
+    <input type="text" class="form-control" id="longitude" name="longitude" placeholder="Longitud"/>
+  </div>
+  <div class="form-group">
+    <label for="image_url">URL de la Imagen</label>
+    <input type="text" class="form-control" id="image_url" name="image_url" placeholder="URL de la foto"/>
+  </div>
+  <button type="submit" class="btn btn-primary">Añadir Puesto</button>
+</form>
+{% endblock %}
